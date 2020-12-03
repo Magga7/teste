@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag" prefHeight="472.0" prefWidth="328.0" style="-fx-background-color: e2eaf2; -fx-background-radius: 0 15 15 0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginController">
+   <children>
+      <ImageView fitHeight="507.0" fitWidth="774.0" layoutX="-159.0" layoutY="-28.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/alesia-kazantceva-VWcPlbHglYc-unsplash.jpg" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.73" />
+         </effect>
+      </ImageView>
+      <Pane layoutY="-2.0" prefHeight="478.0" prefWidth="26.0" style="-fx-background-color: #016594; -fx-background-radius: 0 60 60 0;" />
+      <Pane layoutX="25.0" layoutY="-7.0" prefHeight="485.0" prefWidth="311.0">
+         <children>
+            <Text fill="#ff9009" layoutX="84.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vikstar" textAlignment="CENTER" wrappingWidth="121.8818359375">
+               <font>
+                  <Font name="Xenois Super W04 Bold Italic" size="30.0" />
+               </font>
+            </Text>
+            <JFXTextField fx:id="txtUser" focusColor="#ff9009" layoutX="33.0" layoutY="160.0" prefHeight="43.0" prefWidth="223.0" promptText="Usuario" unFocusColor="#016594">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pssUser" focusColor="#ff9009" layoutX="33.0" layoutY="243.0" prefHeight="43.0" prefWidth="223.0" promptText="Senha" unFocusColor="#016594">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="btnEntrar" layoutX="95.0" layoutY="335.0" onMouseClicked="#Entrar" prefHeight="28.0" prefWidth="100.0" style="-fx-background-color: #016594; -fx-background-radius: 15;" text="ENTRAR" textFill="#e2eaf2">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnFechar" layoutX="265.0" layoutY="13.0" onMouseClicked="#fechar" prefHeight="32.0" prefWidth="26.0" style="-fx-background-radius: 30;" text="X" textFill="#016594">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#drag" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AttController">
+   <children>
+      <WebView fx:id="webDown" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@telas/att.png" />
+         </image>
+      </ImageView>
+      <JFXTextArea focusColor="#405aa800" layoutX="252.0" layoutY="97.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="207.0" prefWidth="272.0" promptText="Para iniciar o download clique em INICIAR" style="-fx-prompt-text-fill: ffffff;" unFocusColor="#4d4d4d00">
+         <font>
+            <Font name="Xenois Super W04 Bold Italic" size="21.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="btnIniciar" layoutX="306.0" layoutY="302.0" onMouseClicked="#Start" style="-fx-background-color: ff9009;" text="INICIAR">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnCancelar" layoutX="405.0" layoutY="301.0" onMouseClicked="#End" prefHeight="24.0" prefWidth="108.0" style="-fx-background-color: ff9009;" text="CANCELAR">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFechar" layoutX="556.0" layoutY="1.0" onMouseClicked="#fechar" prefHeight="16.0" prefWidth="22.0" style="-fx-background-radius: 60;" text="x" textFill="#ff9009">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXProgressBar fx:id="progressBar" layoutX="306.0" layoutY="354.0" prefHeight="9.0" prefWidth="209.0" progress="0.0">
+         <effect>
+            <ColorAdjust brightness="-0.02" contrast="1.0" hue="-0.64" />
+         </effect>
+      </JFXProgressBar>
+   </children>
+</Pane>
